@@ -9,6 +9,8 @@ The main features are the following:
 + Set HTTP status to be returned 
 + Store and retrieve payloads 
 
+By default listens on 443 and 80
+
 All endpoints can be provided a `status` and `headers` parameter that will indicate headers and HTTP status code that should be sent 
 in the response. These can be sent in either the Body or the URL.
 
