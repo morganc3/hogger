@@ -131,7 +131,7 @@ func main() {
 	log.Fatal(http.ListenAndServe(":80", router))
 
 	go func(){
-		log.Fatal(http.ListenAndServe(":80"), router)
+		log.Fatal(http.ListenAndServe(":80", router)
 	}()
-	log.Fatal(http.ListenAndServeTLS(":443"), "server.crt", "server.key", router)
+	log.Fatal(http.ListenAndServeTLS(":443", "server.crt", "server.key", router)
 }
